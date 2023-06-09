@@ -1,3 +1,4 @@
+// Here: add a retry to the connection factory if possibl
 package works.weave.socks.shipping.configuration;
 
 import org.springframework.amqp.core.*;
@@ -25,7 +26,7 @@ public class RabbitMqConfiguration {
         CachingConnectionFactory connectionFactory = new CachingConnectionFactory(host);
         connectionFactory.setCloseTimeout(5000);
         connectionFactory.setConnectionTimeout(5000);
-        connectionFactory.setUsername("guest");
+        connectionFactory.setUsername("guest");  // TODO: what is this???
         connectionFactory.setPassword("guest");
         return connectionFactory;
     }

@@ -1,3 +1,8 @@
+// GPT4:
+// Currently, if an error occurs during the creation and registration of the SpringBootMetricsCollector or the ServletRegistrationBean for the MetricsServlet, it will likely cause the application startup to fail.
+
+// To handle this, you could consider wrapping the creation and registration of these beans in try-catch blocks and handle the possible exceptions gracefully. This would ensure that even if the Prometheus metrics fail to be initialized, your application can still function (albeit without Prometheus metrics).
+
 package works.weave.socks.shipping.configuration;
 
 import io.prometheus.client.exporter.MetricsServlet;

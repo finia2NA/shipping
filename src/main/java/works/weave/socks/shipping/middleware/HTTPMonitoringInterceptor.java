@@ -44,6 +44,7 @@ public class HTTPMonitoringInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse
             httpServletResponse, Object o) throws Exception {
         httpServletRequest.setAttribute(startTimeKey, System.nanoTime());
+        // TODO: here, checking that a request isn't executed 2x after retry can be implemented I think
         return true;
     }
 

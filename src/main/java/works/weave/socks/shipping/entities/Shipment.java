@@ -1,3 +1,5 @@
+
+
 package works.weave.socks.shipping.entities;
 
 import java.util.UUID;

@@ -1,3 +1,5 @@
+// HERE: once, an exception is caught but then simply ignored when adding to shipment. SHOULD NOT BE DONE!!!
+
 package works.weave.socks.shipping.controllers;
 
 import com.rabbitmq.client.Channel;
